@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bodensee Bots</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Import map for Three.js -->
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+                "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="version-tag">v1.1.0</div>
+
+    <!-- Split Layout -->
+    <div class="main-layout">
+        <h1 class="mobile-title">BODENSEE<br>BOTS</h1>
+        <div class="left-panel">
+            <!-- ASCII Art Header -->
+            <pre class="ascii-art">
+ 888888ba                 dP                                                  888888ba             dP            
+ 88    `8b                88                                                  88    `8b            88            
+a88aaaa8P' .d8888b. .d888b88 .d8888b. 88d888b. .d8888b. .d8888b. .d8888b.    a88aaaa8P' .d8888b. d8888P .d8888b. 
+ 88   `8b. 88'  `88 88'  `88 88ooood8 88'  `88 Y8ooooo. 88ooood8 88ooood8     88   `8b. 88'  `88   88   Y8ooooo. 
+ 88    .88 88.  .88 88.  .88 88.  ... 88    88       88 88.  ... 88.  ...     88    .88 88.  .88   88         88 
+ 88888888P `88888P' `88888P8 `88888P' dP    dP `88888P' `88888P' `88888P'     88888888P `88888P'   dP   `88888P'
+            </pre>
+
+            <div class="info-content">
+                <div class="info-block">
+                    <h2>TEAM</h2>
+                    <p>Bodensee Bots</p>
+                </div>
+
+                <div class="info-block">
+                    <h2>LOCATION</h2>
+                    <p>BZM Markdorf</p>
+                </div>
+
+                <div class="info-block">
+                    <h2>MEMBERS</h2>
+                    <p>Marlon Jost</p>
+                    <p>Peer Siems</p>
+                    <p>Ole Schneider</p>
+                </div>
+
+                <div class="info-block">
+                    <h2>LEAGUE</h2>
+                    <p>RoboCup Soccer Lightweight</p>
+                </div>
+
+                <div class="links-container">
+                    <div class="link-group">
+                        <span class="nav-label">Source</span>
+                        <a href="https://github.com/notExpectet/bodensee_bots_public" target="_blank"
+                            class="nav-btn">Github (Public)</a>
+                        <span class="sub-link disabled">Private Repo (N/A)</span>
+                    </div>
+
+                    <div class="link-group">
+                        <span class="nav-label">Social</span>
+                        <a href="https://www.instagram.com/bodensee_bots" target="_blank" class="nav-btn">Instagram</a>
+                    </div>
+
+                    <div class="link-group">
+                        <span class="nav-label">Media</span>
+                        <div class="row">
+                            <a href="https://github.com/notExpectet/bodensee_bots_public/blob/main/bbhg1.png"
+                                target="_blank" class="nav-btn">Background #1</a>
+                            <a href="https://github.com/notExpectet/bodensee_bots_public/blob/main/bbhg2.png"
+                                target="_blank" class="nav-btn">Background #2</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="right-panel">
+            <div id="model-container"></div>
+            <div id="loading-indicator">Loading Prototype...</div>
+        </div>
+    </div>
+
+    <script type="module" src="scene.js?v=2"></script>
+</body>
+
+</html>
